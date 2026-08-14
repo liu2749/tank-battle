@@ -204,7 +204,7 @@ let state = 'menu';          // menu | playing | paused | gameover | win
 let level = 0;
 let score = 0;
 let lives = 3;
-let map = [];
+let map = Array.from({ length: GRID }, () => Array(GRID).fill(EMPTY));
 let player = null;
 let enemies = [];
 let bullets = [];
